@@ -4,9 +4,10 @@ from time import sleep
 
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
+#Configuracion general del wait, normalemente no lo utilizaria es solo para propositos de demo
 wait_time = 3
 
-#Manage starting up the drivers
+# Definiamos la creeacion sel driver
 class myDriver:
     def __init__(self,browser):
         if browser.upper() == "CHROME":
@@ -22,7 +23,7 @@ class myDriver:
 
 
         
-
+#Defino las funciones a utilizar algunas
     def wait(self):
         sleep(wait_time)
 
@@ -32,9 +33,6 @@ class myDriver:
 
     def click(self,element):
         self.driver.find_element(*element).click()
-
-    def clear(self,element):
-        self.driver.find_element(*element).clear()
 
     def write(self,element,text_to_send):
         self.driver.find_element(*element).clear()

@@ -2,7 +2,7 @@ from myDriver import *
 from selenium.webdriver.common.by import By
 
 
-
+#Creamos una clase con lo que vamos a usar  en google
 class googlePage:
     def __init__(self, driver):
         self.driver = driver

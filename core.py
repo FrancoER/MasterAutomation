@@ -3,13 +3,14 @@ from myDriver import *
 from elements import *
 
 
-# create a new Firefox session
+# Creamos la clase con el test
 
 class test_exam(unittest.TestCase):
     def setUp(self):
         self.driver = myDriver("chrome")
         # testing git
 
+# Seteamos los pasos que va a cumplir
     def test_for_exam(self):
         # navigate to the application home page
         google_page = googlePage(self.driver)
@@ -25,6 +26,6 @@ class test_exam(unittest.TestCase):
     def tearDown(self):
         self.driver.exit()
 
-
+# Ejecutamos el test
 if __name__ == '__main__':
     unittest.main()
