@@ -1,0 +1,11 @@
+Hola y bienvenidos a ejecutando el caso de prueba.
+
+Pasos:
+
+-Instalar python
+-Setear python en el path
+-Setear el pip para instalar la libreria de selenium
+-Instalar la libreria de selenium
+-Ir a a la localizacion de core
+-Ejecutar python core.py
+-Enjoy ;)
