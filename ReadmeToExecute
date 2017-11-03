@@ -9,3 +9,13 @@ Pasos:
 -Ir a a la localizacion de core
 -Ejecutar python core.py
 -Enjoy ;)
+
+
+Paradigmas y fundamentos:
+
+Aca se utiliza una base simple de test unitario de selenium con webElements.
+Eleji este formato por la rapidez y la limpieza de codigo, hay una clase objects que no esta relacionada al test;
+y no hace nada pero muestra otra forma de encararlo que es con objetos de python pero dada la simpleza del test;
+y lo que se poco hubiera ganado desarrollando algo dinamico lo adjunto solo como muestra de creatividad ante un problema no como solucion.
+
+
