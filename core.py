@@ -18,18 +18,9 @@ class test_exam(unittest.TestCase):
         # submit search
         google_page.search_key("Seleniumhq")
         google_page.search_bar
-        google_page.result_links
 
-        # get the list of elements which are displayed after the search
-        # currently on result page using find_elements_by_class_name  method
-        lists = google_page.get_links()
-
-        # get the number of elements found
-        print("Found " + str(len(lists)) + " results:")
-        # iterate through each element and print the text that is
-        # name of the search
-        for listitem in lists:
-            print(listitem.text)
+        # click result
+        google_page.click(google_page.result_seleniumHQ)
 
     def tearDown(self):
         self.driver.exit()

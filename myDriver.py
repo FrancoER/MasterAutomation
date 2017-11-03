@@ -1,7 +1,10 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from time import sleep
 
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+
+wait_time = 3
 
 #Manage starting up the drivers
 class myDriver:
@@ -16,11 +19,16 @@ class myDriver:
             print("Please select FIREFOX or CHROME")
             self.driver = webdriver.Chrome()
         self.driver.maximize_window()
+
+
         
-    
+
+    def wait(self):
+        sleep(wait_time)
+
     def navigate(self,url):
         self.driver.get(url)
-        self.driver.implicitly_wait(5)
+        self.driver.implicitly_wait(15)
 
     def click(self,element):
         self.driver.find_element(*element).click()
